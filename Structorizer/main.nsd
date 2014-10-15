@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" text="&#34;main()&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;char feld[3][3]&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<while text="&#34;int k = 0; k &#60; 2; k++&#34;" comment="&#34;&#34;" color="ffffff">
+			<qWhile>
+				<while text="&#34;int l = 0; l &#60; 2; l++&#34;" comment="&#34;&#34;" color="ffffff">
+					<qWhile>
+						<instruction text="&#34;feld[k][l] = 'n'&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qWhile>
+				</while>
+			</qWhile>
+		</while>
+		<while text="&#34;true&#34;" comment="&#34;&#34;" color="ffffff">
+			<qWhile>
+			</qWhile>
+		</while>
+	</children>
+</root>
