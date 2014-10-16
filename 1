@@ -65,13 +65,13 @@ void zeichnen()
 	printf("|%c|%c|%c|\n-------\n|%c|%c|%c|\n-------\n|%c|%c|%c|\n",feld[0][0], feld[1][0], feld[2][0],feld[0][1], feld[1][1], feld[2][1],feld[0][2], feld[1][2], feld[2][2]);
 }
 
-bool sieg(char test)
+bool sieg(char feld[3][3], char test)
 {
 	bool beobachter = false;
 	// 
 	int x, y = 0;
 	// 
-	for (x = 0; x < 2; x++) 
+	while (x = 0; x < 2; x++) 
 	{
 		// 
 		if (feld[x][y] == test)
@@ -180,10 +180,10 @@ int main()
 {
 	char befehl[5];
 	int x, y;
-	bool eingabe = true;
-	for (int k = 0; k < 3; k++) 
+	eingabe = true;
+	for (int k = 0; k < 2; k++) 
 	{
-		for (int l = 0; l < 3; l++) 
+		for (int l = 0; l < 2; l++) 
 		{
 			feld[k][l] = ' ';
 		}
@@ -216,14 +216,14 @@ int main()
 			printf("Unentschieden!");
 			return 0;
 		}
-		if (befehl[0] == 'y')
+		if (befehl == 'y')
 		{
 			do
 			{
 				zeichnen();
 				printf("Spieler 1:\nIn welcher Spalte willst du dein Kreis setzen?");
 				scanf("%i", &y);
-				printf("In welcher Zeile wollen Sie ihr Kreis setzen?");
+				print("In welcher Zeile wollen Sie ihr Kreis setzen?");
 				scanf("%i", &x);
 				if (feld[x][y] == ' ')
 				{
